@@ -1,0 +1,35 @@
+{
+  "groups": [{
+    "name": "classpath:*",
+    "type": "com.springboot.pojo.Bar",
+    "sourceType": "com.springboot.pojo.Bar"
+  }],
+  "properties": [
+    {
+      "name": "classpath:*.arrs",
+      "type": "java.lang.String[]",
+      "sourceType": "com.springboot.pojo.Bar"
+    },
+    {
+      "name": "classpath:*.bar-name-list",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.springboot.pojo.Bar"
+    },
+    {
+      "name": "classpath:*.map",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.springboot.pojo.Bar"
+    },
+    {
+      "name": "classpath:*.name",
+      "type": "java.lang.String",
+      "sourceType": "com.springboot.pojo.Bar"
+    },
+    {
+      "name": "classpath:*.name-list",
+      "type": "java.util.List<java.util.Map<java.lang.String,java.lang.String>>",
+      "sourceType": "com.springboot.pojo.Bar"
+    }
+  ],
+  "hints": []
+}

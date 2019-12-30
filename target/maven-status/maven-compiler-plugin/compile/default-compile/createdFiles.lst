@@ -1,0 +1,10 @@
+com\springboot\controller\UserController.class
+com\springboot\pojo\Bar.class
+com\springboot\test\TestTask.class
+com\springboot\service\UserService.class
+META-INF\spring-configuration-metadata.json
+com\springboot\service\impl\UserServiceImpl.class
+com\springboot\mapper\UserMapper.class
+com\springboot\controller\HelloWorldController.class
+com\springboot\Application.class
+com\springboot\pojo\User.class

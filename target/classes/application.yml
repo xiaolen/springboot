@@ -1,0 +1,44 @@
+server:
+  port: 8099
+#pojo属性注入
+mybar: #pojo中的prefix值
+  name: 张三
+  #  arrs: 赵,钱,孙,李
+  #  nameList:
+  #    name: 刘
+  #      value: 刘备
+  #      name: 张
+  #        value: 张飞
+  #    BarNameList:
+  #    早退次数
+  #    迟到次数
+  #    旷工天数
+  #map:
+  #  key1: 曹操
+  #  key2: 曹丕
+  #  key3: 曹植
+spring:
+    datasource:
+#      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8&characterEncoding=utf8&useSSL=false&autoReconnect=false&rewriteBatchedStatements=true
+      username: root
+      password: 123456
+
+mybatis:
+    type-aliases-package: com.springboot.pojo
+    mapper-locations: classpath:mapper/*Mapper.xml
+
+---
+spring:
+  # thymeleaf
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+    #spring.thymeleaf.content-type
+    servlet:
+      content-type: text/html
+    # 开发阶段务必关闭缓存 (=false)
+    cache: false
+
